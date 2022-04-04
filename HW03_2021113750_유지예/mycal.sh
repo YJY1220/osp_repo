@@ -1,6 +1,8 @@
 #!/bin/bash
 #set PS3 prompt
 declare -a array
+echo "project management in github"
+
 PS3="select menu : "
 
 menu=$1
