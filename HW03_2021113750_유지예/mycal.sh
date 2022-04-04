@@ -1,5 +1,6 @@
 #!/bin/bash
 #set PS3 prompt
+declare -a array
 PS3="select menu : "
 
 menu=$1
@@ -13,6 +14,7 @@ fi
 
 num1=$(<num1.txt)
 num2=$(<num2.txt)
+array=("$num1" "$num2")
 op=$menu
 case $menu in
         add) let total=num1+num2;;
@@ -22,7 +24,7 @@ case $menu in
 esac
 
 echo " "
-echo "num1 : $num1"
-echo "num2 : $num2"
+echo "num1 : ${array[0]}"
+echo "num2 : ${array[1]}"
 echo "op : $op"
 echo "total : $total"
