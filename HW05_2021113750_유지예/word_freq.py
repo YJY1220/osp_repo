@@ -18,3 +18,9 @@ from str_line in line:
         count[word] = count.get(word,0) + 1
 
 sort_count = dict(sorted(count.items(), key=lambda item: item[1], reverse=True))
+
+cnt = 0
+
+for key, val in sort_count.items():
+    if int(sys.argv[2])==cnt:
+        break
