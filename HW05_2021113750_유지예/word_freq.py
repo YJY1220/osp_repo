@@ -24,3 +24,5 @@ cnt = 0
 for key, val in sort_count.items():
     if int(sys.argv[2])==cnt:
         break
+    print("{:<10}".format(key) + "{:>5}".format(val))
+    cnt += 1
