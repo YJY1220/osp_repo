@@ -10,7 +10,7 @@ line = data.readlines()
 
 count = {}
 
-from str_line in line:
+for str_line in line:
     words = str_line.split()
 
     for word in words:
