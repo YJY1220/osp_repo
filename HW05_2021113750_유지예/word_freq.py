@@ -16,3 +16,5 @@ from str_line in line:
     for word in words:
         word = ''.join(filter(str.isalnum,word))
         count[word] = count.get(word,0) + 1
+
+sort_count = dict(sorted(count.items(), key=lambda item: item[1], reverse=True))
