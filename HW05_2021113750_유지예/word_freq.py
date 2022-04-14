@@ -26,3 +26,5 @@ for key, val in sort_count.items():
         break
     print("{:<10}".format(key) + "{:>5}".format(val))
     cnt += 1
+
+data.close()
