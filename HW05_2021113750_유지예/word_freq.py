@@ -7,3 +7,10 @@ param2 = int(sys.argv[2])
 
 data = open(param1, "rt", encoding='UTF8')
 line = data.readlines()
+
+
+from str_line in line:
+    words = str_line.split()
+
+    for word in words:
+        word = ''.join(filter(str.isalnum,word))
